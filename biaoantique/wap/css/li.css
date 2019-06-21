@@ -1,0 +1,364 @@
+/***************************************页面全局样式*************************************/
+
+/*全局定义*/
+
+body {
+    font-size: 0.26rem;
+    font-family: "microsoft yahei";
+    background: #fff;
+    max-width: 10.8rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    color: #666;
+}
+
+a:active {
+    color: #f90;
+}
+
+input {
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.bgfff {
+    background: #fff;
+}
+
+.plpr20 {
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+}
+
+/*左右浮动*/
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/*颜色块*/
+
+.cfff {
+    color: #fff;
+}
+
+.c999 {
+    color: #999;
+}
+
+.c666 {
+    color: #666;
+}
+
+.c333 {
+    color: #333;
+}
+
+.c000 {
+    color: #000;
+}
+
+/*对齐*/
+
+.te_l {
+    text-align: left;
+}
+
+.te_r {
+    text-align: right;
+}
+
+.te_c {
+    text-align: center;
+}
+
+/*字体定义*/
+
+.f26 {
+    font-size: 0.26rem;
+}
+
+.f28 {
+    font-size: 0.28rem;
+}
+
+.f30 {
+    font-size: 0.30rem;
+}
+
+.f32 {
+    font-size: 0.32rem;
+}
+
+.f34 {
+    font-size: 0.34rem;
+}
+
+.f36 {
+    font-size: 0.36rem;
+}
+
+.f38 {
+    font-size: 0.38rem;
+}
+
+.f40 {
+    font-size: 0.4rem;
+}
+
+.f50 {
+    font-size: 0.5rem;
+}
+
+.di_no {
+    display: none;
+}
+
+.di_in {
+    display: inline-block;
+}
+
+.di_bl {
+    display: block;
+}
+
+/*顶间距*/
+
+.mt5 {
+    margin-top: 0.05rem;
+}
+
+.mt10 {
+    margin-top: 0.1rem;
+}
+
+.mt15 {
+    margin-top: 0.15rem;
+}
+
+.mt20 {
+    margin-top: 0.2rem;
+}
+
+.mt25 {
+    margin-top: 0.25rem;
+}
+
+.mt30 {
+    margin-top: 0.3rem;
+}
+
+.mt35 {
+    margin-top: 0.35rem;
+}
+
+.mt40 {
+    margin-top: 0.4rem;
+}
+
+.mt45 {
+    margin-top: 0.45rem;
+}
+
+.mt50 {
+    margin-top: 0.5rem;
+}
+
+/*顶内距*/
+
+.pt5 {
+    padding-top: 0.05rem;
+}
+
+.pt10 {
+    padding-top: 0.1rem;
+}
+
+.pt15 {
+    padding-top: 0.15rem;
+}
+
+.pt20 {
+    padding-top: 0.2rem;
+}
+
+.pt25 {
+    padding-top: 0.25rem;
+}
+
+.pt30 {
+    padding-top: 0.3rem;
+}
+
+.pt35 {
+    padding-top: 0.35rem;
+}
+
+.pt40 {
+    padding-top: 0.4rem;
+}
+
+.pt45 {
+    padding-top: 0.45rem;
+}
+
+.pt50 {
+    padding-top: 0.5rem;
+}
+
+/*左间距*/
+
+.ml5 {
+    margin-left: 0.05rem;
+}
+
+.ml10 {
+    margin-left: 0.1rem;
+}
+
+.ml15 {
+    margin-left: 0.15rem;
+}
+
+.ml20 {
+    margin-left: 0.2rem;
+}
+
+.ml25 {
+    margin-left: 0.25rem;
+}
+
+.ml30 {
+    margin-left: 0.3rem;
+}
+
+.ml35 {
+    margin-left: 0.35rem;
+}
+
+.ml40 {
+    margin-left: 0.4rem;
+}
+
+.ml45 {
+    margin-left: 0.45rem;
+}
+
+.ml50 {
+    margin-left: 0.5rem;
+}
+
+/*定位*/
+
+.p_r {
+    position: relative;
+}
+
+.p_a {
+    position: absolute;
+}
+
+/*表单按钮样式初始化*/
+
+.icon_com {
+    display: inline-block;
+}
+
+.btn_com {
+    display: inline-block;
+    width: 2rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    color: #fff;
+    font-size: 0.28rem;
+    background: #0c4aac;
+}
+
+.select_com {
+    border: none;
+    outline: none;
+    background: #1778dc url(../images/icon_12.png) no-repeat 0.1rem center;
+    background-size: 0.17rem 0.1rem;
+    width: 1.65rem;
+    box-sizing: border-box;
+    padding-left: 0.3rem;
+    height: 0.56rem;
+    font-size: 0.26rem;
+    font-family: "微软雅黑";
+    color: #fff;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.input_com {
+    font-size: 0.24rem;
+    font-family: "微软雅黑";
+    width: 3.6rem;
+    padding: 0.12rem 0.2rem;
+}
+
+/*全局定义 end*/
+
+
+/*  共用头部header */
+
+.header { 
+  padding: 0.1rem 0.2rem;
+}
+.lelogon img { 
+     width: 1.72rem;
+}
+
+.individual { 
+    width: 0.36rem;
+    height: 0.41rem;  
+    margin-right: 0.5rem; 
+    margin-top: 0.1rem;
+}
+.individual img { 
+    vertical-align: top;
+} 
+
+.foneer { 
+    background: url(../images/icons_08.png) no-repeat 0 50%/ 0.48rem  0.40rem;
+     width: 0.48rem;
+     height: 0.40rem; 
+     margin-top: 0.1rem;
+}
+
+/*  共用头部header*/   
+
+.m_banner img { 
+    width: 100%; 
+    vertical-align: middle;
+}
+
+.bnitem li {
+    width: 50%;
+    float: left;
+    text-align: center; 
+    border-bottom: 5px solid #fff;
+    line-height: 0.94rem;
+}  
+.bnitem li a { 
+     color: #333333;
+     font-size: 0.33rem;
+}
+.bnitem li.on { 
+    border-bottom: 5px solid #128bed;
+}
+.bnitem li.on a { 
+    color: #128bed;
+}
