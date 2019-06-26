@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>index</title>
+    <meta name="author" content="lsl">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="generator" content="webstorm">
+    <!--移动端响应式-->
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <!--支持IE的兼容模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--让部分国产浏览器默认采用高速模式渲染页面-->
+    <meta name="renderer" content="webkit">
+    <!--页面style css-->
+    <link rel="stylesheet" type="text/css" href="./css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/li.css">
+    <!--JQ库-->
+    <script src="./js/jquery-1.8.3.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="./js/li.js"></script>
+
+
+
+</head>
+
+
+<body>
+
+
+
+    <!-- header -->
+
+    <!-- header end-->
+
+    <!-- banner -->
+    <div class="m_banner"> <img src="images/m_banner2.jpg" alt=""> </div>
+    <!-- banner end-->
+
+
+    <!--  -->
+
+    <div class="place pad20">
+        <span class="">当前位置：</span>
+        <a href=""> 首页</a> <i> &gt; </i>
+        <a href=""> 产品服务</a>
+
+    </div>
+
+    <div class="serve-magin ">
+        <div class="introducecd pad20">
+            <ul>
+                <li class="serlow">
+                    <div class="bel-titel serve-tite"> 商标服务 <i></i></div>
+                    <ul>
+                        <li>
+                            <div>
+                                商标续展
+
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                商标许可备案
+                            </div>
+
+                        </li>
+                        <li>
+                            <div>
+                                商标转让
+                            </div>
+
+                        </li>
+                        <li>
+                            <div>
+                                商标注销
+                            </div>
+
+                        </li>
+                        <li>
+                            <div>
+                                商标异议
+                            </div>
+
+                        </li>
+                        <li>
+                            <div>
+                                商标撤三申请
+                            </div>
+
+                        </li>
+                        <li>
+                            <div>
+                                商标驳回复审
+                            </div>
+
+                        </li>
+                        <li>
+                            <div>
+                                商标无效宣告
+                            </div>
+
+                        </li>
+                        <li>
+                            <div>
+                                商标证补发
+                            </div>
+
+                        </li>
+                        <li>
+                            <div>
+                                商标宽展
+                            </div>
+
+                        </li>
+                        <li>
+                            <div>
+                                商标更正
+                            </div>
+
+                        </li>
+                        <li>
+                            <div>
+                                商标异议答辩
+                            </div>
+
+                        </li>
+                        <li>
+                            <div>
+                                商标撤三答辩
+                            </div>
+
+                        </li>
+                        <li>
+                            <div>
+                                无效宣告答辩
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="serlow">
+                    <div class="bel-titel serve-tite"> 专利服务 <i></i></div>
+                    <ul>
+                        <li>
+                            <div>
+                                商标续展
+
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                商标许可备案
+                            </div>
+
+                        </li>
+                        <li>
+                            <div>
+                                商标转让
+                            </div>
+
+                        </li>
+                        <li>
+                            <div>
+                                商标注销
+                            </div>
+
+                        </li>
+                        <li>
+                            <div>
+                                商标异议
+                            </div>
+
+                        </li>
+                        <li>
+                            <div>
+                                商标撤三申请
+                            </div>
+
+                        </li>
+                        <li>
+                            <div>
+                                商标驳回复审
+                            </div>
+
+                        </li>
+                    </ul>
+                </li>
+                <li class="serlow">
+                    <div class="bel-titel serve-tite"> 版权服务 <i></i></div>
+                    <ul>
+                        <li>
+                            <div>
+                                商标续展
+
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                商标许可备案
+                            </div>
+
+                        </li>
+                        <li>
+                            <div>
+                                商标转让
+                            </div>
+
+                        </li>
+                        <li>
+                            <div>
+                                商标注销
+                            </div>
+
+                        </li>
+                        <li>
+                            <div>
+                                商标异议
+                            </div>
+
+                        </li>
+                        <li>
+                            <div>
+                                商标撤三申请
+                            </div>
+
+                        </li>
+                        <li>
+                            <div>
+                                商标驳回复审
+                            </div>
+
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- foot -->
+
+    <!-- foot -->
+</body>
+<script>
+
+
+    var h3s = document.querySelectorAll(".bel-titel");
+    var uls = document.querySelectorAll(".serlow>ul");
+    var lis = document.querySelectorAll(".serlow li");
+
+    for (var i = 0; i < h3s.length; i++) {
+        h3s[i].onoff = true;
+        h3s[i].index = i;
+        h3s[i].onclick = function () {
+            for (var i = 0; i < h3s.length; i++) {
+                //	除了点击的h3以外的所有h3
+                if (i != this.index) {
+                    h3s[i].classList.remove('active');
+                    h3s[i].onoff = true;
+                    uls[i].style.display = "none";
+                }
+            }
+            if (this.onoff) {
+                this.classList.add('active');
+                uls[this.index].style.display = "block";
+            } else {
+                this.classList.remove('active');
+                uls[this.index].style.display = "none";
+            }
+            this.onoff = !this.onoff;
+        }
+    }
+
+</script>
+
+</html>

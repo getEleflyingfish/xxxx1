@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>index</title>
+    <meta name="author" content="lsl">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="generator" content="webstorm">
+    <!--移动端响应式-->
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <!--支持IE的兼容模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--让部分国产浏览器默认采用高速模式渲染页面-->
+    <meta name="renderer" content="webkit">
+    <!--页面style css-->
+    <link rel="stylesheet" type="text/css" href="./css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/li.css">
+    <!--JQ库-->
+    <script src="./js/jquery-1.8.3.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="./js/li.js"></script>
+
+
+
+</head>
+
+
+<body>
+
+
+
+    <!-- header -->
+
+    <!-- header end-->
+
+    <!-- banner -->
+    <div class="m_banner"> <img src="images/m_banner3.jpg" alt=""> </div>
+    <!-- banner end-->
+
+    <div class="bnitem clearfix">
+        <ul>
+            <li class="">
+                <a href=""> 关于我们</a>
+            </li>
+            <li class="on">
+                <a href=""> 联系我们</a>
+            </li>
+        </ul>
+    </div>
+
+    <!--  -->
+
+    <div class="ouchwa">
+        <div class="m_banner"> <img src="images/mapimg_02.jpg" alt=""></div>
+        <div class="introducecd pad20">
+            <ul>
+                <li class="below">  
+                    <div class="bel-titel"> 广西标宝商标代理有限公司  <i></i></div>
+                    <ul>
+                        <li>
+                            <p>
+                                    客服电话：0771-5735808 &nbsp;&frasl;&nbsp;&nbsp;5894380 &nbsp;&nbsp;&frasl;&nbsp;&nbsp;5569461 &nbsp;&nbsp;&frasl;&nbsp;&nbsp;5569462<br/>
+                                    电子邮箱：cbkj#vcb.cn (把#替换为@)<br/>
+                                    公司地址：南宁市青秀区东盟商务区桂雅路11号麒麟商务大厦A2205<br/>
+                                    邮政编码：530029
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="below">  
+                    <div class="bel-titel"> 北京分公司  <i></i></div>
+                    <ul>
+                        <li>
+                            <p>
+                                    客服电话：0771-5735808 &nbsp;&frasl;&nbsp;&nbsp;5894380 &nbsp;&nbsp;&frasl;&nbsp;&nbsp;5569461 &nbsp;&nbsp;&frasl;&nbsp;&nbsp;5569462<br/>
+                                    电子邮箱：cbkj#vcb.cn (把#替换为@)<br/>
+                                    公司地址：南宁市青秀区东盟商务区桂雅路11号麒麟商务大厦A2205<br/>
+                                    邮政编码：530029
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="below">  
+                    <div class="bel-titel"> 桂林分公司  <i></i></div>
+                    <ul>
+                        <li>
+                            <p>
+                                    客服电话：0771-5735808 &nbsp;&frasl;&nbsp;&nbsp;5894380 &nbsp;&nbsp;&frasl;&nbsp;&nbsp;5569461 &nbsp;&nbsp;&frasl;&nbsp;&nbsp;5569462<br/>
+                                    电子邮箱：cbkj#vcb.cn (把#替换为@)<br/>
+                                    公司地址：南宁市青秀区东盟商务区桂雅路11号麒麟商务大厦A2205<br/>
+                                    邮政编码：530029
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="below">  
+                    <div class="bel-titel"> 深圳分公司  <i></i></div>
+                    <ul>
+                        <li>
+                            <p>
+                                    客服电话：0771-5735808 &nbsp;&frasl;&nbsp;&nbsp;5894380 &nbsp;&nbsp;&frasl;&nbsp;&nbsp;5569461 &nbsp;&nbsp;&frasl;&nbsp;&nbsp;5569462<br/>
+                                    电子邮箱：cbkj#vcb.cn (把#替换为@)<br/>
+                                    公司地址：南宁市青秀区东盟商务区桂雅路11号麒麟商务大厦A2205<br/>
+                                    邮政编码：530029
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <hr class="cl00">
+
+
+    <!-- foot -->
+
+    <!-- foot -->
+</body>
+<script>
+
+        
+        var h3s = document.querySelectorAll(".bel-titel");
+        var uls = document.querySelectorAll(".below>ul");
+        var lis = document.querySelectorAll(".below li"); 
+
+/* 		for (var i = 0; i < lis.length; i++) {
+            lis[i].onmouseover = function(){
+                for(i = 0; i < lis.length; i++) {
+                    lis[i].style.background = "";
+                }
+                this.style.background = "yellow";
+            }
+            lis[i].onmouseout = function(){
+                for(i = 0; i < lis.length; i++) {
+                    lis[i].style.background = "";
+                }
+            }
+        } */
+
+        for(var i = 0;i<h3s.length;i++){
+            h3s[i].onoff = true;
+            h3s[i].index = i;
+            h3s[i].onclick = function(){
+                for (var i = 0; i < h3s.length; i++) {
+            //	除了点击的h3以外的所有h3
+                    if(i != this.index){
+                        h3s[i].classList.remove('active');
+                        h3s[i].onoff = true;
+                        uls[i].style.display = "none";
+                    }
+                }
+                if(this.onoff){
+                    this.classList.add('active');
+                    uls[this.index].style.display = "block"; 
+                }else{
+                    this.classList.remove('active');
+                    uls[this.index].style.display = "none";
+                }
+                this.onoff = !this.onoff;
+            }
+        }
+
+</script>
+</html>
